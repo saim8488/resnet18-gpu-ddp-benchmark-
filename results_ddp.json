@@ -1,0 +1,9 @@
+{
+  "config": "Config5_DDP",
+  "world_size": 2,
+  "total_time_s": 1004.0,
+  "avg_epoch_s": 50.2,
+  "throughput_img_s": 111.5,
+  "peak_gpu_mem_mb": 940.4,
+  "test_acc_pct": 95.48
+}

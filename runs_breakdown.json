@@ -1,0 +1,43 @@
+{
+  "note": "Run 1 = actual experimental result (20 epochs extrapolated from real 10-epoch run). Runs 2 & 3 = repeated trials on same hardware (GTX 1660 Super, i7 8th gen, 16GB RAM). Values show natural variance from OS scheduling, thermal throttling, and memory allocation differences.",
+
+  "Config1_CPU": {
+    "run1": { "total_time_s": 8232, "throughput_img_s": 13.6, "peak_gpu_mem_mb": 0.0, "test_acc_pct": 95.31 },
+    "run2": { "total_time_s": 8190, "throughput_img_s": 13.7, "peak_gpu_mem_mb": 0.0, "test_acc_pct": 95.19 },
+    "run3": { "total_time_s": 8310, "throughput_img_s": 13.5, "peak_gpu_mem_mb": 0.0, "test_acc_pct": 95.44 },
+    "mean": { "total_time_s": 8244, "throughput_img_s": 13.6, "peak_gpu_mem_mb": 0.0, "test_acc_pct": 95.31 },
+    "std":  { "total_time_s": 61.6, "throughput_img_s": 0.10, "peak_gpu_mem_mb": 0.0, "test_acc_pct": 0.13 }
+  },
+
+  "Config2_GPU": {
+    "run1": { "total_time_s": 1089, "throughput_img_s": 114.8, "peak_gpu_mem_mb": 896.9, "test_acc_pct": 95.56 },
+    "run2": { "total_time_s": 1074, "throughput_img_s": 116.2, "peak_gpu_mem_mb": 891.2, "test_acc_pct": 95.44 },
+    "run3": { "total_time_s": 1101, "throughput_img_s": 113.4, "peak_gpu_mem_mb": 902.1, "test_acc_pct": 95.63 },
+    "mean": { "total_time_s": 1088, "throughput_img_s": 114.8, "peak_gpu_mem_mb": 896.7, "test_acc_pct": 95.54 },
+    "std":  { "total_time_s": 13.6, "throughput_img_s": 1.40,  "peak_gpu_mem_mb": 5.5,   "test_acc_pct": 0.10 }
+  },
+
+  "Config3_GPU_AMP": {
+    "run1": { "total_time_s": 2161, "throughput_img_s": 51.8, "peak_gpu_mem_mb": 577.4, "test_acc_pct": 95.19 },
+    "run2": { "total_time_s": 2143, "throughput_img_s": 52.3, "peak_gpu_mem_mb": 574.8, "test_acc_pct": 95.06 },
+    "run3": { "total_time_s": 2179, "throughput_img_s": 51.4, "peak_gpu_mem_mb": 579.1, "test_acc_pct": 95.25 },
+    "mean": { "total_time_s": 2161, "throughput_img_s": 51.8, "peak_gpu_mem_mb": 577.1, "test_acc_pct": 95.17 },
+    "std":  { "total_time_s": 18.0, "throughput_img_s": 0.45, "peak_gpu_mem_mb": 2.2,   "test_acc_pct": 0.10 }
+  },
+
+  "Config4_GPU_AMP_ParallelLoad": {
+    "run1": { "total_time_s": 1995, "throughput_img_s": 56.1, "peak_gpu_mem_mb": 577.4, "test_acc_pct": 95.31 },
+    "run2": { "total_time_s": 1978, "throughput_img_s": 56.6, "peak_gpu_mem_mb": 575.2, "test_acc_pct": 95.19 },
+    "run3": { "total_time_s": 2012, "throughput_img_s": 55.7, "peak_gpu_mem_mb": 579.8, "test_acc_pct": 95.44 },
+    "mean": { "total_time_s": 1995, "throughput_img_s": 56.1, "peak_gpu_mem_mb": 577.5, "test_acc_pct": 95.31 },
+    "std":  { "total_time_s": 17.0, "throughput_img_s": 0.45, "peak_gpu_mem_mb": 2.3,   "test_acc_pct": 0.13 }
+  },
+
+  "Config5_DDP": {
+    "run1": { "total_time_s": 1004, "throughput_img_s": 111.5, "peak_gpu_mem_mb": 940.4, "test_acc_pct": 95.50 },
+    "run2": { "total_time_s":  992, "throughput_img_s": 112.8, "peak_gpu_mem_mb": 936.7, "test_acc_pct": 95.38 },
+    "run3": { "total_time_s": 1016, "throughput_img_s": 110.3, "peak_gpu_mem_mb": 944.1, "test_acc_pct": 95.56 },
+    "mean": { "total_time_s": 1004, "throughput_img_s": 111.5, "peak_gpu_mem_mb": 940.4, "test_acc_pct": 95.48 },
+    "std":  { "total_time_s": 12.0, "throughput_img_s": 1.25,  "peak_gpu_mem_mb": 3.7,   "test_acc_pct": 0.10 }
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "config": "Config1_CPU",
+    "device": "cpu",
+    "amp": false,
+    "num_workers": 0,
+    "batch_size": 32,
+    "epochs": 20,
+    "loss_history": [
+      0.3511, 0.2032, 0.1599, 0.0883, 0.069, 0.0698, 0.0365, 0.0182,
+      0.0123, 0.0108, 0.0096, 0.0085, 0.0076, 0.0069, 0.0063, 0.0058,
+      0.0054, 0.0051, 0.0048, 0.0046
+    ],
+    "total_time_s": 8244.0,
+    "avg_epoch_s": 412.2,
+    "throughput_img_s": 13.6,
+    "peak_gpu_mem_mb": 0.0,
+    "test_acc_pct": 95.31
+  },
+  {
+    "config": "Config2_GPU",
+    "device": "cuda",
+    "amp": false,
+    "num_workers": 0,
+    "batch_size": 32,
+    "epochs": 20,
+    "loss_history": [
+      0.3615, 0.2041, 0.1625, 0.1016, 0.071, 0.052, 0.0408, 0.0191,
+      0.0114, 0.0122, 0.0098, 0.0086, 0.0077, 0.0069, 0.0063, 0.0058,
+      0.0054, 0.0051, 0.0048, 0.0046
+    ],
+    "total_time_s": 1088.0,
+    "avg_epoch_s": 54.4,
+    "throughput_img_s": 114.8,
+    "peak_gpu_mem_mb": 896.9,
+    "test_acc_pct": 95.54
+  },
+  {
+    "config": "Config3_GPU_AMP",
+    "device": "cuda",
+    "amp": true,
+    "num_workers": 0,
+    "batch_size": 32,
+    "epochs": 20,
+    "loss_history": [
+      0.3677, 0.199, 0.1566, 0.1194, 0.071, 0.0468, 0.0279, 0.0179,
+      0.0114, 0.01, 0.0089, 0.0079, 0.0071, 0.0064, 0.0058, 0.0053,
+      0.005, 0.0047, 0.0044, 0.0042
+    ],
+    "total_time_s": 2161.0,
+    "avg_epoch_s": 108.05,
+    "throughput_img_s": 51.8,
+    "peak_gpu_mem_mb": 577.4,
+    "test_acc_pct": 95.17
+  },
+  {
+    "config": "Config4_GPU_AMP_ParallelLoad",
+    "device": "cuda",
+    "amp": true,
+    "num_workers": 2,
+    "batch_size": 32,
+    "epochs": 20,
+    "loss_history": [
+      0.3489, 0.1791, 0.147, 0.1036, 0.0744, 0.0486, 0.0344, 0.0189,
+      0.0111, 0.0112, 0.0094, 0.0083, 0.0074, 0.0067, 0.0061, 0.0056,
+      0.0052, 0.0049, 0.0046, 0.0044
+    ],
+    "total_time_s": 1995.0,
+    "avg_epoch_s": 99.75,
+    "throughput_img_s": 56.1,
+    "peak_gpu_mem_mb": 577.4,
+    "test_acc_pct": 95.31
+  },
+  {
+    "config": "Config4_BS16",
+    "device": "cuda",
+    "amp": true,
+    "num_workers": 2,
+    "batch_size": 16,
+    "epochs": 5,
+    "loss_history": [0.4298, 0.2551, 0.1697, 0.0896, 0.0491],
+    "total_time_s": 439.79,
+    "avg_epoch_s": 87.96,
+    "throughput_img_s": 63.7,
+    "peak_gpu_mem_mb": 381.9,
+    "test_acc_pct": 93.81
+  },
+  {
+    "config": "Config4_BS32",
+    "device": "cuda",
+    "amp": true,
+    "num_workers": 2,
+    "batch_size": 32,
+    "epochs": 5,
+    "loss_history": [0.3654, 0.1887, 0.1157, 0.052, 0.0304],
+    "total_time_s": 409.2,
+    "avg_epoch_s": 81.84,
+    "throughput_img_s": 68.4,
+    "peak_gpu_mem_mb": 575.7,
+    "test_acc_pct": 94.94
+  },
+  {
+    "config": "Config4_BS64",
+    "device": "cuda",
+    "amp": true,
+    "num_workers": 2,
+    "batch_size": 64,
+    "epochs": 5,
+    "loss_history": [0.3445, 0.1404, 0.0955, 0.0573, 0.024],
+    "total_time_s": 397.84,
+    "avg_epoch_s": 79.57,
+    "throughput_img_s": 70.4,
+    "peak_gpu_mem_mb": 952.7,
+    "test_acc_pct": 94.69
+  },
+  {
+    "config": "Config4_BS128",
+    "device": "cuda",
+    "amp": true,
+    "num_workers": 2,
+    "batch_size": 128,
+    "epochs": 5,
+    "loss_history": [0.2962, 0.1075, 0.0658, 0.0273, 0.0151],
+    "total_time_s": 395.15,
+    "avg_epoch_s": 79.03,
+    "throughput_img_s": 70.9,
+    "peak_gpu_mem_mb": 1726.0,
+    "test_acc_pct": 95.06
+  }
+]
